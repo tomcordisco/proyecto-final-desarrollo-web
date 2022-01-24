@@ -1,0 +1,79 @@
+/*FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700;900&display=swap');
+/*FUENTE TITULOS*/
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+@import "_variables";
+@import "_index";
+@import "_footer";
+@import "_imagenes";
+@import "_acercaDe";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/*EACH FONT MAP*/
+@each $k, $v in $font-weights{
+  .font-weight-#{$k}{
+    font-weight: $v;
+  }
+}
+
+/*BACKGROUND*/
+.background {
+  /*height: 100vh;
+  background-image: url(../assets/carrousel/cuadriculadoAzul.jpg);
+  background-repeat: repeat;
+  background-size: cover;*/
+
+  background: rgb(225,65,21);
+  background: linear-gradient(0deg, rgba(225,65,21,1) 0%, rgba(144,5,1,1) 67%, rgba(144,5,0,1) 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  .title {
+    padding: 1rem;
+  }
+}
+
+/*TITULOS*/
+
+.tituloUno {
+  font-family: "Road Rage", cursive;
+  color: $principal-color;
+  border: 1rem;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.tituloDos {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/*TITULOS TABLET*/
+@media only screen and (min-width: 576px) {
+  .tituloUno {
+    font-size: 5rem;
+  }
+}
+
+/*TITULOS DESKTOP*/
+@media only screen and (min-width: 992px) {
+}

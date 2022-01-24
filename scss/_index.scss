@@ -1,0 +1,56 @@
+/*BANNER SINGLE*/
+.bannerPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  .single-link {
+    position: absolute;
+    margin: 1rem;
+    img {
+      width: 3rem;
+    }
+    .img-link:hover {
+      filter: drop-shadow(-10px 5px 5px $bg-hover-banner);
+    }
+  }
+}
+
+/*BANNER TABLET*/
+@media only screen and (min-width: 576px) {
+  .bannerPrincipal {
+    .single-link {
+      position: absolute;
+      margin: 2rem;
+      img {
+        width: 8rem;
+      }
+    }
+  }
+}
+
+/*BANNER DESKTOP*/
+@media only screen and (min-width: 992px) {
+  .bannerPrincipal {
+    .single-link {
+      position: absolute;
+      margin: 3rem;
+      img {
+        width: 12rem;
+      }
+    }
+  }
+}
+
+/*TABLE TOUR*/
+.tour {
+  background-color: $bg-color-transparente;
+  color: $principal-color;
+  th {
+    padding: 1rem;
+    a{
+      color: $secondary-color;
+    }
+  }
+}

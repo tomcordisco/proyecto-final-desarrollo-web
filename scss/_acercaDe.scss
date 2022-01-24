@@ -1,0 +1,32 @@
+/*ACERCA DE*/
+.box {
+  background: $bg-color-transparente;
+  color: $principal-color;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .imagenUno {
+    align-self: center;
+    width: 250px;
+    padding: 1rem;
+  }
+  p {
+    padding: 0.5rem;
+    padding-bottom: 0;
+  }
+}
+
+/*ACERCA DE TABLET*/
+@media only screen and (min-width: 576px) {
+  .box .imagenUno {
+    float: right;
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/*ACERCA DE DESKTOP*/
+@media only screen and (min-width: 992px) {
+}
